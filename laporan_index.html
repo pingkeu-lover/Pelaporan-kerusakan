@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PT Arunika Teknologi - Pelaporan Kerusakan</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f9; padding: 20px; }
+        .container { max-width: 500px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin: auto; }
+        h2 { color: #333; text-align: center; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #007bff; color: white; border: none; padding: 10px; width: 100%; margin-top: 15px; border-radius: 4px; font-size: 16px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        #result { margin-top: 15px; font-weight: bold; text-align: center; color: green; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>PT Arunika Teknologi</h2>
+        <p style="text-align:center; color: #668;">Sistem Pelaporan Kerusakan Fasilitas</p>
+        
+        <form id="reportForm">
+            <label for="nama">Nama Pelapor:</label>
+            <input type="text" id="nama" required placeholder="Contoh: Andi">
+
+            <label for="lokasi">Lokasi / Ruangan:</label>
+            <input type="text" id="lokasi" required placeholder="Contoh: Ruang Administrasi">
+
+            <label for="deskripsi">Deskripsi Kerusakan:</label>
+            <textarea id="deskripsi" rows="4" required placeholder="Contoh: Komputer tidak dapat menyala"></textarea>
+
+            <button type="submit">Kirim Laporan</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
